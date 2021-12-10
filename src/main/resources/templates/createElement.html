@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript"> 
+        window.onload = function() {
+            // 요소 생성
+            var h3 = document.createElement('h3');
+            
+            // 텍스트 노드 생성
+            var text = document.createTextNode("출력할 텍스트 : 홍길동");
+
+            // 문서에 출력. 텍스트를 h3에 연결
+            h3.appendChild(text);
+            
+            //h3 를 body에 연결(부착)
+            document.body.appendChild(h3);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

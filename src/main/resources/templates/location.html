@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript"> 
+        function Move() {
+            location.hred = "http://www.google.com";
+        }
+        
+
+        function assignMove(){
+            window.location.assign("http://naver.com");
+        }
+    
+        function replaceMove() {
+            // 뒤로가기 적용 안됨
+            window.location.replace("http://youtube.com");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Move()">구글</button>
+    <button onclick="assignMove()">네이버</button>
+    <button onclick="replaceMove()">유튜브</button>
+</body>
+</html>

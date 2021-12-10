@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript querySelectorAll()</title>
+    <script type="text/javascript"> 
+        window.onload = function() {
+            // 배열로 만들어짐 -> for문으로 처리
+            var headers = document.querySelectorAll('h1');
+
+            for(var i = 0; i<headers.length; i++){
+                var header = headers[i];
+                header.style.color = 'skyblue';
+                header.style.backgroundColor = 'black';
+                header.innerHTML = "JavaScript";
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html>

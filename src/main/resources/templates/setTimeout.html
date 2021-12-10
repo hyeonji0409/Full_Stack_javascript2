@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript setTimeout() 메소드</title>
+        <script type="text/javascript">
+            function openInfo(){
+                window.open("msgWindow.html", "setTimeout", "width=300, height=200");
+            }
+
+            // msgWindow 창이 닫히고 부모창이 setTimeout.html 창이 포커스를 받을 때 호출
+            function showMsg() {
+                document.write("로드 하자마자 열린 공지사항 창이 <br> 3초 내에 자동으로 닫혔습니다.");
+            }
+        </script>
+    </head>
+    <body onload="openInfo()" onfocus="showMsg()">
+        부모창입니다. (opener에 해당)
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript"> 
+        function changeImg() {
+            var img = document.getElementById('imageA');
+            var hint = document.getElementById('hint');
+            var btn = document.getElementById('changeButton');
+
+            img.src = "image/B.png";
+            hint.innerHTML = "새로운 이미지로 변경되었습니다.";
+            changeButton.innerHTML = "완료";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <img id="imageA" src="image/A.png">
+        <div id="hint">[변경] 버튼을 누르면 이미지가 바뀝니다.</div> <br><br>
+        <button id="changeButton" onclick="changeImg()">변경</button>
+    </div>
+</body>
+</html>
