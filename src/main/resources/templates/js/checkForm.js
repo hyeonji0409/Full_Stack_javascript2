@@ -25,6 +25,14 @@ window.onload = function() {
             id.focus();
             return false;
         }
+
+        if(id.value <='6' || id.value >= '10'){
+            alert("아이디는 6~10자로 입력하세요");
+            id.value = "";
+            id.focus();
+            return false;
+        } // id 길이 처리
+
     }; // onsubmit
 
 
