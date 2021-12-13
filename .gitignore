@@ -16,6 +16,8 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+!**/src/main/**/image/
+!**/src/main/**/media/
 
 ### IntelliJ IDEA ###
 .idea
@@ -35,6 +37,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-javascript2/src/main/resources/templates/image/
-javascript2/src/main/resources/templates/media/

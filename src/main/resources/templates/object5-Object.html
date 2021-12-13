@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script type="text/javascript"> 
+        function People() {
+            this.age = 20;
+        }
+
+        var person1 = new People(); // 객체 생성
+        var person2 = new People();
+        var person3 = new People();
+
+        // person1 객체에 메서드 추가
+        person1.setAge = function() {
+            this.age += 10;
+        }
+
+        // prototype property에 setAge() 메서드 정의
+        People.prototype.setAge = function() {
+            this.age += 1;
+        }
+
+        // prototype property에 getAge() 메서드 정의
+        People.prototype.getAge = function() {
+            return this.age;
+        }
+
+        person1.setAge();
+        person2.setAge();
+        person3.setAge();
+
+      /*  console.log(person1.age);
+        console.log(person2.age);
+        console.log(person3.age); */
+
+        console.log(person1.getAge());
+        console.log(person2.getAge());
+        console.log(person3.getAge());
+    </script>
+</head>
+<body>
+</body>
+</html>
